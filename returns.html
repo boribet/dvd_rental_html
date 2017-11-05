@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+<script src=""></script>
+<link href="https://fonts.googleapis.com/css?family=Monoton|Shadows+Into+Light+Two" rel="stylesheet">
+<!-- <link href="/normalize.css" rel="stylesheet"> -->
+  <style>
+  body{
+    background: grey;
+  }
+    header {
+      padding: 200px;
+      text-align: center;
+      font-family: 'Monoton', cursive;
+      text-shadow: -1px 0 black, 0 6px black, 1px 0 black, 0 -3px black;
+      background: url('https://image.freepik.com/free-vector/cinema-logo_23-2147503279.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    p {
+      text-align: center;
+      font-family: 'Shadows Into Light Two', cursive;
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    div {
+      text-align: center;
+      font-family: 'Shadows Into Light Two', cursive;
+      max-width: 500px;
+      padding: 0px;
+      margin: 0 auto;
+    }
+    h1 {
+      text-align: center;
+      padding: 20px;
+      font-size: 20px;
+
+    }
+    @media (max-width: 500px) {
+    h1 {
+      font-size: 36px;
+    }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Demo DVD Rental</h1>
+  </header>
+  <p>
+  Movies
+  </p>
+<div>
+<button id="myButton" class="float-left submit-button" >Home</button>
+</div>
+
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "/Applications/XAMPP/xamppfiles/htdocs/dvd_rental_html/rental.html";
+    };
+</script>
+</body>
