@@ -62,7 +62,7 @@
   </header>
 <div id ="1">
   <p> "Please provide your email adress, the title of the DVD and the date of return below:  </p>
-  <input type='text' id='txtEmail2'placeholder="Email"/>
+  <input type='text' name='txtEmail'placeholder="Email"/>
   <input type='text' id='txtDvdTitle'placeholder="DVD Title"/><br>
   <input type='text' id='txtYear'placeholder="YYYY"/>
   <input type='text' id='txtMonth'placeholder="MM"/>
@@ -70,13 +70,15 @@
   <button id="submitReturnForm">Submit</button>
 </div id="2">
 <div>
-<button id="myButton" class="float-left submit-button" >Home</button>
+<button name="myButton" class="float-left submit-button" >Home</button>
 </div>
 
 <script type="text/javascript">
-    document.getElementById("myButton").onclick = function () {
+    document.getElementsByName("myButton")[0].onclick = function () {
         location.href = "/Applications/XAMPP/xamppfiles/htdocs/dvd_rental_html/home.html";
     };
 </script>
+<script src="emailvalid.js"></script>
+<script src="datevalid.js"></script>
 <script src="returning.js"></script>
 </body>
