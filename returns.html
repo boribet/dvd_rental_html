@@ -60,16 +60,23 @@
   <header>
     <h1>Demo DVD Rental</h1>
   </header>
-  <p>
-  Movies
-  </p>
+<div id ="1">
+  <p> "Please provide your email adress, the title of the DVD and the date of return below:  </p>
+  <input type='text' id='txtEmail2'placeholder="Email"/>
+  <input type='text' id='txtDvdTitle'placeholder="DVD Title"/><br>
+  <input type='text' id='txtYear'placeholder="YYYY"/>
+  <input type='text' id='txtMonth'placeholder="MM"/>
+  <input type='text' id='txtDay'placeholder="DD"/>
+  <button id="submitReturnForm">Submit</button>
+</div id="2">
 <div>
 <button id="myButton" class="float-left submit-button" >Home</button>
 </div>
 
 <script type="text/javascript">
     document.getElementById("myButton").onclick = function () {
-        location.href = "/Applications/XAMPP/xamppfiles/htdocs/dvd_rental_html/rental.html";
+        location.href = "/Applications/XAMPP/xamppfiles/htdocs/dvd_rental_html/home.html";
     };
 </script>
+<script src="returning.js"></script>
 </body>
